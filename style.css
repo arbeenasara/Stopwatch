@@ -1,0 +1,38 @@
+#stopwatch
+{
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    padding-bottom: 60px;
+    margin-top: 150px;
+}
+
+.btn
+{
+    padding: 10px;
+    font-size: 20pt;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn:hover
+{
+    background-color: rgb(168, 168, 24);
+}
+
+#options
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#timer
+{
+    text-align: center;
+    font-size: 25pt;
+}
