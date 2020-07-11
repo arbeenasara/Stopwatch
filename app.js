@@ -8,19 +8,18 @@ var startTimer = function() {
         milliseconds = (milliseconds > 1000) ? 1 : (milliseconds + 1);
         setTimeToHTML(hours, minutes, seconds, milliseconds);
     },1);
-    document.getElementById("milliseconds").disabled = true;
+    
     secondsInt = setInterval(function(){
         seconds = (seconds > 59) ? 1 : (seconds + 1);
     },1000);
-    document.getElementById("seconds").disabled = true;
+    
     minutesInt = setInterval(function(){
         minutes = (minutes > 59) ? 1 : (minutes + 1);
     },1000 * 60);
-    document.getElementById("minutes").disabled = true;
+    
     hoursInt = setInterval(function(){
         hours = (hours > 59) ? 1 : (hours + 1);
     },1000 * 60 * 60);
-    document.getElementById("hours").disabled = true;
 }
 
 var stopTimer = function() {
@@ -38,4 +37,9 @@ var setTimeToHTML = function(hours, minutes, seconds, milliseconds) {
     document.getElementById("minutes").innerText = (minutes.toString().length == 1) ? ("0" + minutes) : minutes ;
     document.getElementById("seconds").innerText = (seconds.toString().length == 1) ? ("0" + seconds) : seconds ;
     document.getElementById("milliseconds").innerText = milliseconds;
+}
+
+function disableBtn(){
+    var btn = document.getElementById("start");
+    btn.disabled = true
 }

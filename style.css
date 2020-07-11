@@ -1,28 +1,91 @@
+body
+{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading
+{
+    color: wheat;
+    font-family: chiller;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 40px;
+}
+
 #stopwatch
 {
-    padding: 20px;
-    background-color: antiquewhite;
+    padding: 30px;
     border-radius: 5px;
     width: 50%;
     height: 80%;
     margin-left: 25%;
-    padding-bottom: 60px;
-    margin-top: 150px;
 }
 
 .btn
 {
-    padding: 10px;
-    font-size: 20pt;
+    padding: 50px;
+    font-size: 2px;
     background-color: olive;
     color: white;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.btn:hover
+.btn1
+{
+    padding: 5px;
+    margin-bottom: 4px;
+    width: 19vh;
+    font-size: 20pt;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn2
+{
+    padding: 5px;
+    margin-bottom: 4px;
+    width: 19vh;
+    font-size: 20pt;
+    background-color: rgb(233, 127, 27);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn3
+{
+    padding: 5px;
+    margin-bottom: 4px;
+    width: 19vh;
+    font-size: 20pt;
+    background-color: rgb(108, 179, 202);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.btn1:hover
 {
     background-color: rgb(168, 168, 24);
+}
+
+.btn2:hover
+{
+    background-color: rgb(170, 99, 33);
+}
+
+.btn3:hover
+{
+    background-color: rgb(56, 121, 143);
 }
 
 #options
@@ -31,8 +94,22 @@
     margin-bottom: 5px;
 }
 
+.time
+{
+    color: white;
+}
+
 #timer
 {
     text-align: center;
     font-size: 25pt;
+    padding: 40px;
+    background-color: rgb(131, 120, 20);
+    opacity: 0.6;
+    border-radius: 5px;
+    width: 80vh;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
 }
