@@ -13,17 +13,19 @@
     <h1 class="heading">Simple Stopwatch App</h1>
     </div>
     
+    <div class="container">
     <div id="timer">
         <span class="time" id="hours">00</span><span class="time"> :</span>
         <span class="time" id="minutes">00</span><span class="time"> :</span>
         <span class="time" id="seconds">00</span><span class="time"> :</span>
         <span class="time" id="milliseconds">00</span>
     </div>
+    </div>
     <div id="stopwatch">
         <div id="options" class="container">
-            <button class="btn1" onclick="startTimer(); disableBtn()">Start</button>
-            <button class="btn2" onclick="stopTimer(); disableBtn()">Stop</button>
-            <button class="btn3" onclick="resetTimer(); disableBtn()">Reset</button>
+            <button class="btn1" id="start" onclick="startTimer()">Start</button>
+            <button class="btn2" onclick="stopTimer()">Stop</button>
+            <button class="btn3" onclick="resetTimer()">Reset</button>
         </div>
     </div>    
         

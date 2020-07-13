@@ -20,16 +20,19 @@ var startTimer = function() {
     hoursInt = setInterval(function(){
         hours = (hours > 59) ? 1 : (hours + 1);
     },1000 * 60 * 60);
+    document.getElementById("start").disabled = true
 }
 
 var stopTimer = function() {
     clearInterval(millisecInt); clearInterval(secondsInt); clearInterval(minutesInt); clearInterval(hoursInt);
+    document.getElementById("start").disabled = false
 }
 
 var resetTimer = function() {
     stopTimer();
     hours = 0 ; minutes = 0 ; seconds = 0 ; milliseconds = 0 ; 
     setTimeToHTML(hours, minutes, seconds, milliseconds);
+    document.getElementById("start").disabled = false
 }
 
 var setTimeToHTML = function(hours, minutes, seconds, milliseconds) {
@@ -37,9 +40,4 @@ var setTimeToHTML = function(hours, minutes, seconds, milliseconds) {
     document.getElementById("minutes").innerText = (minutes.toString().length == 1) ? ("0" + minutes) : minutes ;
     document.getElementById("seconds").innerText = (seconds.toString().length == 1) ? ("0" + seconds) : seconds ;
     document.getElementById("milliseconds").innerText = milliseconds;
-}
-
-function disableBtn(){
-    var btn = document.getElementById("start");
-    btn.disabled = true
 }
